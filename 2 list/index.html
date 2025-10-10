@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
 </head>
-<body class="wrapper">
-    <div class="menu">
-        <div class="menu__title">
-            <h1 class="h1">Мои заметки</h1>
-            <div class="menu__title__knopka">Новая заметка</div>
-            <span class="menu__title__teg">Теги</span>
-                <div class="menu__tegi">Все</div>
-                <div class="menu__tegi">Идеи</div>
-                <div class="menu__tegi">Личное</div>
-                <div class="menu__tegi">Работа</div>
-                <div class="menu__tegi">Список покупок</div>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="menu_title">Мои Заметки</div>
+            <button id="btn-note" class="menu_button">Новая Заметка</button>
+            <h2>Теги</h2>
+            <ul class="list-container" id="menu">
+            
+        </ul>
         </div>
 
         <div class="content">
-        поиск
+            <div class="search">
+                <input class = 'forma_input' type = 'text' placeholder = 'Поиск' id="search">
+                <button class="search_button" id = "search-btn"></button>
+            </div>
+        <div class="list" id="list">
+            
         </div>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
+    
 
+            
+        </div>
+        <div class="overlay">
+            <div class="modal">
+                <div class="modal__close" id="overlay">X</div>
+                <form>
+                    <input class="madal__input" type="text" placeholder="Заголовок">
+                    <select name="select"></select>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
-    
