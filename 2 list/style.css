@@ -1,43 +1,184 @@
-.wrapper {
-    background-color:#F0F0F0;
-    display:grid;
+body{
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
-.menu {
-    width:1000px;
-    background-color:white;
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    justify-self: center;
-    align-self: center;
-    margin:30px auto;
-    border-radius:10px;
+.wrapper{
+    background-color: white;
+    width: 1000px;
+    height: 90%;
+    border: 2px solid #D8D9DA;
+    border-radius: 10px ;
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    overflow: hidden;
 }
-.menu__title {
-    display:grid;
+.menu{
+    background-color:#FCFBFC;
+    border-right: 2px solid #FFFFFF; 
 }
-.h1 {
-    justify-self: center;
-    align-self: center;
-    font-size:40px;
-    font-family:Inter;
+.menu_title{
+    
+    margin-top:20px ;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 15px;
 }
-.menu__title__knopka {
-    background-color:#4499FF;
-    color:white;
-    justify-self:center;
-    align-self:center;
-    margin:20px auto;
-    font-size: 22px;
-    padding:10px 55px;
+.search{
+    display: flex;
+    gap: 10px;
     border-radius: 10px;
 }
-.menu__title__teg {
-    color:#74777B; 
-    font-size:25px;
-    margin:20px 25px;
+.content{
+
+    padding: 20px;
 }
-.menu__tegi {
-    font-size:20px;
-    margin:7px 50px;
-    
+.search_button {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: none;
+    background-image: url('i.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-color:rgb(119, 205, 255) ;
+    border-radius: 10px;
+    justify-content: flex-end;
+}
+
+.forma_input{
+    border: 1px solid gray;
+    padding: 5px 5px;
+    background: #fcfcfd;
+    flex-grow: 1;
+    border-radius: 10px;
+    height: 25px;
+    justify-content: flex-end;
+    font-size:medium;
+}
+.menu_button{
+    background-color: #4499FF;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    border-style: solid;
+    border-color: gray;
+    font-size: 25px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid gray;
+    margin: 0 auto; 
+    transition: all 0.5s ease;
+}
+
+
+
+h2{
+    padding-bottom: 0px;
+    padding-left: 35px;
+    color: rgb(39, 39, 39);
+    padding-top: 20px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.list-container{
+    margin-top: 0px;
+    list-style: none;
+
+}
+.list-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            border-bottom: 1px solid #f1f2f6;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+.list-item:hover{
+            background-color: #f8f9fa91;
+            border-radius: 30px;
+            width: 70%;
+            padding-left: 35px;
+        }
+
+ .list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    height: calc(90% - 115px);
+    background-color: white;
+}
+.list_otch{
+    border: 1px solid #e3e2e5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.list_otch-title{
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.list_otch-date{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #495b6d;
+}
+.list_otch-tag{
+    font-size: 15px;
+    background: #f5f7f5;
+    padding: 8px 15px;
+    width: fit-content;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #495b6d;
+    font-weight: normal;
+}
+.overlay{
+    background: #495b6d;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background: #e3e2e5;
+    width: 500px;
+    padding: 30px;
+    position: relative;
+}
+.modal__close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: #4499FF;
+    color: #e3e2e5;
+    border: none;
+}
+.modal__close:hover{
+    cursor: pointer;
 }
