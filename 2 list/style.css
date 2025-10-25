@@ -52,6 +52,9 @@ body{
     justify-content: flex-end;
 }
 
+
+
+
 .forma_input{
     border: 1px solid gray;
     padding: 5px 5px;
@@ -77,6 +80,9 @@ body{
     margin: 0 auto; 
     transition: all 0.5s ease;
 }
+
+
+
 
 
 
@@ -109,18 +115,18 @@ h2{
             width: 70%;
             padding-left: 35px;
         }
-
- .list{
+        
+.list{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    overflow-y: auto;
-    height: calc(90% - 115px);
     background-color: white;
+    overflow-y: auto;
+    height: calc(90%-115px);
 }
 .list_otch{
-    border: 1px solid #e3e2e5;
+    border: gray;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -130,11 +136,13 @@ h2{
     position: relative;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .list_otch-title{
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 10px;
 }
+
 .list_otch-date{
     margin-top: 10px;
     font-size: 18px;
@@ -151,15 +159,15 @@ h2{
     top: 20px;
     color: #495b6d;
     font-weight: normal;
-}
+} 
+
 .overlay{
-    background: #495b6d;
     position:fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -169,7 +177,7 @@ h2{
     padding: 30px;
     position: relative;
 }
-.modal__close{
+.modal_close{
     position: absolute;
     right: 0;
     top: 0;
@@ -178,7 +186,30 @@ h2{
     background: #4499FF;
     color: #e3e2e5;
     border: none;
+    transition: all 0.2s ease;
 }
-.modal__close:hover{
+.modal_close:hover{
+    cursor: pointer;
+}
+.overlay_open{
+    display: flex;
+}
+.modal__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.modal__input{
+    padding: 10px;
+
+}
+.modal__btn-save{
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.modal__btn-save:hover{
     cursor: pointer;
 }
