@@ -1,4 +1,3 @@
-// Получаем ссылки на DOM-элементы по их ID
 const list = document.getElementById('list') // Контейнер для списка заметок
 const search = document.getElementById('search') // Поле поиска
 const btnSearch = document.getElementById('search-btn') // Кнопка поиска
@@ -270,3 +269,4 @@ function init(){
 
 // Запуск приложения
 init()
+
